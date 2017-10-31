@@ -5,4 +5,4 @@ services:
     container_name: app
     volumes:
       - ./log/events.log:/tmp/webhook-prototype-events.log
-      - ./fluentd:/fluentd/etc
+      - ./fluentd/etc:/fluentd/etc

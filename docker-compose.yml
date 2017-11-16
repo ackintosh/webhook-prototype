@@ -10,7 +10,6 @@ services:
     image: landoop/fast-data-dev:latest
     container_name: kafka
     environment:
-      ADV_HOST: 127.0.0.1
       RUNTESTS: 0
     ports:
       - 2181:2181

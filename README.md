@@ -15,3 +15,9 @@ $ docker-compose exec kafka kafka-topics --zookeeper localhost:2181 --create --r
 ```
 $ echo "foo:bar" >> log/events.log
 ```
+
+#### Open Web UI
+
+We can check the records via Web UI included in [Landoop/fast-data-dev](https://github.com/Landoop/fast-data-dev).
+
+http://localhost:3030/

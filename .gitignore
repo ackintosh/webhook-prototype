@@ -1,0 +1,4 @@
+log/events.log
+/.bundle
+vendor
+Gemfile.lock

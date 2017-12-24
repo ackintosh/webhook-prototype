@@ -10,10 +10,16 @@ $ docker-compose up
 $ docker-compose exec kafka kafka-topics --zookeeper localhost:2181 --create --replication-factor 1 --partitions 1 --topic events
 ```
 
+#### Run consumer
+
+```
+cd consumer && bundle exec karafka s
+```
+
 #### Emit new event
 
 ```
-$ echo "foo:bar" >> log/events.log
+$ echo "{"foo":"bar"}" >> log/events.log
 ```
 
 #### Open Web UI

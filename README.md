@@ -1,5 +1,13 @@
 ## Webhook Prototype
 
+#### Setup
+
+```
+$ docker-compose run --rm consumer bundle install
+```
+
+#### Run
+
 ```
 $ docker-compose up
 ```
@@ -8,12 +16,6 @@ $ docker-compose up
 
 ```
 $ docker-compose exec kafka kafka-topics --zookeeper localhost:2181 --create --replication-factor 1 --partitions 1 --topic events
-```
-
-#### Run consumer
-
-```
-cd consumer && bundle exec karafka s
 ```
 
 #### Emit new event

@@ -21,7 +21,7 @@ $ docker-compose exec kafka kafka-topics --zookeeper localhost:2181 --create --r
 #### Emit new event
 
 ```
-$ echo "{"foo":"bar"}" >> log/events.log
+$ echo '{"foo":"bar"}' >> log/events.log
 ```
 
 #### Open Web UI

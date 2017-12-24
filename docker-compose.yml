@@ -17,3 +17,13 @@ services:
       - 8081-8083:8081-8083
       - 9581-9585:9581-9585
       - 9092:9092
+  consumer:
+    build: ./consumer
+    container_name: consumer
+    working_dir: /app
+    command: bundle exec karafka s
+    volumes:
+      - ./consumer:/app
+      - bundle_cache:/usr/local/bundle
+volumes:
+  bundle_cache:

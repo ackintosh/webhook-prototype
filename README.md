@@ -4,6 +4,7 @@
 
 ```
 $ docker-compose run --rm consumer bundle install
+$ echo '' > log/events.log
 ```
 
 #### Run
